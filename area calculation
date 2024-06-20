@@ -1,0 +1,23 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        int a,l,b;
+    float r;
+    Scanner s=new Scanner(System.in);
+        a=s.nextInt();
+        l=s.nextInt();
+        b=s.nextInt();
+        r=s.nextFloat();
+        int ars=(int)a*a;
+        int arr=(int)l*b;
+        double arc=(float)3.14*r*r;
+        System.out.println(ars);
+        System.out.println(arr);
+        System.out.printf("%.2f",arc);
+        
+        
+    }
+}
