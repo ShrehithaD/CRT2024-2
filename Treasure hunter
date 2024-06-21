@@ -1,0 +1,19 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        int ncg=s.nextInt();
+        int benper=s.nextInt();
+        int bbper=s.nextInt();
+        int ben_share=ncg*benper/100;
+    ncg=ncg-ben_share;
+    int bb_share=ncg*bbper/100;
+    ncg=ncg-bb_share;
+    int p_share=ncg/3;
+    System.out.printf("%d\n%d\n%d\n",ben_share,bb_share,p_share);
+       
+    }
+}
