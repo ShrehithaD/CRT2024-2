@@ -1,0 +1,21 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+    Scanner s=new Scanner(System.in);
+        int r;
+        int n=s.nextInt();
+        int m=s.nextInt();
+    r=n*m;
+    if(r>1000)
+    {
+        System.out.printf("%d",n+m);
+    }
+    else
+    {
+        System.out.printf("%d",r);
+    }
+}
+}
