@@ -1,0 +1,23 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        int d,m,y,sum;
+        d=s.nextInt();
+        m=s.nextInt();
+        y=s.nextInt();
+        sum=s.nextInt();
+    sum=(d+m+y)%12;
+    if(sum==0)
+{
+    System.out.printf("Cinema Day");
+}
+else
+{
+    System.out.printf("Not a Cinema Day");
+}
+    }
+}
