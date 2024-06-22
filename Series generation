@@ -1,0 +1,24 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+       int n=s.nextInt();
+    int t1=7,t2=5;
+    for(int i=0;i<n;i++)
+    {
+        if(i%2==0)
+        {
+            System.out.printf("%d ",t1);
+            t1 +=1;
+        }
+        else
+        {
+            System.out.printf("%d ",t2);
+            t2 +=1;
+    }
+    }
+    }
+}
