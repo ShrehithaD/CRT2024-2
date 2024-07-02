@@ -1,0 +1,41 @@
+import java.util.*;
+class xyz1
+{
+    public static void main(String[] args) {
+Scanner s=new Scanner(System.in);
+String str="@honeycomb2347";
+int count=0,uc=0,lc=0,d=0,ss=0;
+for(int i=0;i<str.length();i++)
+{
+char ch=str.charAt(i);
+if(Character.isLetterOrDigit(ch))
+{
+count++;
+ if(Character.isLetter(ch))
+ {
+      if(Character.isUpperCase(ch))
+   {
+     uc++;
+   }
+   else
+   {
+     lc++;
+   }
+ }
+ else
+ {
+  d++;
+ }
+}
+else
+{
+ss++;
+}
+}
+System.out.println("Total letters and digits"+ count);
+System.out.println("upper case"+uc);
+System.out.println("lower case"+lc);
+System.out.println("digit"+d);
+System.out.println("special symbol"+ss);
+}
+}
