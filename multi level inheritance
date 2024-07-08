@@ -1,0 +1,59 @@
+class Gfather
+{
+String gname;
+int p1;
+void getGfather(String gname,int p1)
+{
+this.gname=gname;
+this.p1=p1;
+}
+void showGfather()
+{
+System.out.println("Gfather name="+gname);
+System.out.println("Gfather property="+p1);
+}
+}
+class Father extends Gfather
+{
+String fname;
+int p2;
+void getFather(String fname,int p2)
+{
+this.fname=fname;
+this.p2=p2;
+}
+void showFather()
+{
+System.out.println("Father name="+fname);
+System.out.println("Father property="+p2);
+}
+}
+class Daughter extends Father
+{
+String dname;
+int p3;
+void getDaughter(String dname,int p3)
+{
+this.dname=dname;
+this.p3=p3;
+}
+void showDaughter()
+{
+System.out.println("Daughter name="+dname);
+System.out.println("Daughter property="+p3);
+System.out.println("Daughter total property="+(p1+p2));
+}
+}
+class Abcds
+{
+public static void main(String args[])
+{
+Daughter d1=new Daughter();
+d1.getGfather("kkk",700000);
+d1.showGfather();
+d1.getFather("rrr",200000);
+d1.showFather();
+d1.getDaughter("cc",300000);
+d1.showDaughter();
+}
+}
