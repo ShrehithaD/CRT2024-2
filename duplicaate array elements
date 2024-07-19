@@ -1,0 +1,38 @@
+//Read n elements from array and remove duplicate elements from array.
+//input:
+//5
+//23 11 54 11 23
+//ouput:
+//23 11 54
+//convert array into arraylist
+//first read first element from the list
+//then search that element available from second element onwards//
+
+import java.util.*;
+import java.util.Arrays;
+import java.util.Scanner;
+public class Test55
+{
+public static void main(String args[])
+{
+Scanner s=new Scanner(System.in);
+Integer n=s.nextInt();
+Integer a[]=new Integer[n];
+for(int i=0;i<n;i++)
+{
+  a[i]=s.nextInt();
+}
+ArrayList<Integer> a1=new ArrayList<>(Arrays.asList(a));
+for(int i=0;i<a1.size()-1;i++)
+{
+for(int j=i+1;j<a1.size();j++)
+{
+if(a1.get(i)==a1.get(j))
+{
+a1.remove(j);
+}
+}
+}
+System.out.print(a1+" ");
+}
+}
